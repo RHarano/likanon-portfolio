@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPressサイトのセキュリティ対策 | LIKaNON Blog</title>
+    <meta name="description" content="WordPressは世界中で使われている分、攻撃対象になりやすい。定期更新、セキュリティプラグイン、バックアップなど必須の対策をまとめました。">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../index.html"><img src="../.vscode/img/likanonlogo.png" alt="LIKaNON" class="logo-img"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html#service">サービス</a></li>
+                    <li><a href="../index.html#portfolio">実績</a></li>
+                    <li><a href="../index.html#reason">選ばれる理由</a></li>
+                    <li><a href="../index.html#blog">ブログ</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ブログ記事 -->
+    <article class="blog-article">
+        <div class="blog-article-header">
+            <div class="container">
+                <div class="blog-article-meta">
+                    <span class="blog-category">セキュリティ</span>
+                    <span class="blog-read-time">5分で読める</span>
+                </div>
+                <h1 class="blog-article-title">WordPressサイトのセキュリティ対策</h1>
+                <p class="blog-article-lead">WordPressは世界中で使われている分、ハッカーの攻撃対象にもなりやすいです。「うちは小さい会社だから大丈夫」は危険な考え。必須の対策をまとめました。</p>
+            </div>
+        </div>
+
+        <div class="blog-article-content">
+            <div class="container">
+                <div class="blog-article-body">
+                    <section class="blog-section">
+                        <h2>なぜWordPressが狙われやすいのか</h2>
+                        <p>WordPressは世界のWebサイトの約40%以上で使用されている、最も人気のあるCMSです。しかし、その普及率の高さゆえに、ハッカーの格好のターゲットにもなっています。</p>
+
+                        <div class="blog-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">40%+</span>
+                                <span class="stat-desc">世界のWebサイトにおけるWordPressのシェア</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">90%</span>
+                                <span class="stat-desc">CMSを使ったサイトへの攻撃のうち、WordPressを狙ったもの</span>
+                            </div>
+                        </div>
+
+                        <p>「小さな会社だから狙われない」と思うかもしれませんが、攻撃者はサイトの規模に関係なく自動化されたツールで脆弱性を探しています。対策は全てのサイトに必要です。</p>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>1. WordPress本体を常に最新版に</h2>
+                        <p>WordPress本体のアップデートには、機能追加だけでなくセキュリティの修正も含まれています。古いバージョンのまま放置すると、既知の脆弱性を突かれるリスクが高まります。</p>
+
+                        <div class="blog-point-box">
+                            <h3>アップデートの注意点</h3>
+                            <ul>
+                                <li><strong>自動更新を有効に</strong> - マイナーアップデートは自動更新がおすすめ</li>
+                                <li><strong>更新前にバックアップ</strong> - 万が一に備えて必ずバックアップ</li>
+                                <li><strong>テスト環境で確認</strong> - 大きなアップデートはテスト環境で先に確認</li>
+                                <li><strong>更新情報をチェック</strong> - 重大な脆弱性は緊急アップデートが配布される</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>2. プラグイン・テーマの管理</h2>
+                        <p>プラグインやテーマの脆弱性も攻撃の入口になります。使っていないものは削除し、使っているものは常に最新版に保ちましょう。</p>
+
+                        <div class="blog-tips">
+                            <div class="tip-item">
+                                <h4>プラグイン管理のポイント</h4>
+                                <ul>
+                                    <li>使っていないプラグインは「無効化」ではなく「削除」</li>
+                                    <li>長期間更新されていないプラグインは代替を検討</li>
+                                    <li>信頼できる開発元のプラグインを選ぶ</li>
+                                    <li>必要最低限のプラグイン数に抑える</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="blog-warning">
+                            <span class="warning-icon">⚠️</span>
+                            <p>非公式サイトからダウンロードした無料のプレミアムテーマ・プラグインにはマルウェアが仕込まれていることがあります。公式ディレクトリか正規販売元から入手しましょう。</p>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>3. 強力なパスワードを設定</h2>
+                        <p>単純なパスワードは総当たり攻撃（ブルートフォース）で簡単に破られます。管理者アカウントには強力なパスワードを設定しましょう。</p>
+
+                        <div class="blog-highlight">
+                            <p>強力なパスワードの条件</p>
+                            <ul>
+                                <li>12文字以上の長さ</li>
+                                <li>大文字・小文字・数字・記号を組み合わせる</li>
+                                <li>辞書に載っている単語を使わない</li>
+                                <li>他のサービスと使い回さない</li>
+                                <li>パスワードマネージャーの利用を推奨</li>
+                            </ul>
+                        </div>
+
+                        <div class="blog-example">
+                            <p class="example-label">弱いパスワード例</p>
+                            <p class="example-bad">password123, admin2024, company名</p>
+                            <p class="example-label">強いパスワード例</p>
+                            <p class="example-good">Kx#9mL$2vQ8nP@wZ</p>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>4. セキュリティプラグインの導入</h2>
+                        <p>セキュリティプラグインを導入することで、様々な攻撃から自動的にサイトを守ることができます。</p>
+
+                        <div class="blog-tools">
+                            <div class="tool-item">
+                                <h4>Wordfence Security</h4>
+                                <p>ファイアウォール、マルウェアスキャン、ログイン試行制限など包括的な保護を提供。無料版でも十分な機能。</p>
+                            </div>
+                            <div class="tool-item">
+                                <h4>SiteGuard WP Plugin</h4>
+                                <p>日本製のセキュリティプラグイン。管理ページへのアクセス制限、ログインロックなどシンプルで使いやすい。</p>
+                            </div>
+                            <div class="tool-item">
+                                <h4>Sucuri Security</h4>
+                                <p>マルウェアスキャン、ブラックリスト監視、セキュリティ強化など。有料版ではWAF機能も。</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>5. ログインページの保護</h2>
+                        <p>WordPressの管理画面ログインページ（/wp-admin, /wp-login.php）は攻撃者にとって最も狙いやすいポイントです。追加の保護を施しましょう。</p>
+
+                        <div class="blog-point-box">
+                            <h3>ログイン保護の方法</h3>
+                            <ul>
+                                <li><strong>ログイン試行回数の制限</strong> - 複数回失敗したらロックアウト</li>
+                                <li><strong>二段階認証の導入</strong> - パスワード+認証アプリ</li>
+                                <li><strong>ログインURLの変更</strong> - デフォルトのURLを変更</li>
+                                <li><strong>CAPTCHA（画像認証）の追加</strong> - ボット対策</li>
+                                <li><strong>「admin」ユーザー名を使わない</strong> - 推測されやすい</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>6. 定期的なバックアップ</h2>
+                        <p>万が一ハッキングされた場合や、更新でサイトが壊れた場合に備えて、定期的なバックアップは必須です。</p>
+
+                        <div class="blog-highlight">
+                            <p>バックアップのポイント</p>
+                            <ul>
+                                <li>データベースとファイルの両方をバックアップ</li>
+                                <li>最低でも週1回の自動バックアップを設定</li>
+                                <li>バックアップデータはサーバー外にも保存</li>
+                                <li>複数世代のバックアップを保持</li>
+                                <li>定期的に復元テストを実施</li>
+                            </ul>
+                        </div>
+
+                        <div class="blog-tip-single">
+                            <span class="tip-icon">💡</span>
+                            <p>「UpdraftPlus」や「BackWPup」などの無料プラグインで、Google DriveやDropboxへの自動バックアップが設定できます。</p>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>7. SSL証明書の導入</h2>
+                        <p>SSL証明書を導入すると、サイトとユーザー間の通信が暗号化されます。「http://」から「https://」になり、ブラウザに鍵マークが表示されます。</p>
+
+                        <div class="blog-point-box">
+                            <h3>SSLのメリット</h3>
+                            <ul>
+                                <li><strong>通信の暗号化</strong> - 個人情報の盗聴を防止</li>
+                                <li><strong>信頼性の向上</strong> - ユーザーに安心感を与える</li>
+                                <li><strong>SEO効果</strong> - Googleがhttpsを推奨</li>
+                                <li><strong>ブラウザ警告の回避</strong> - 「保護されていない」警告が出ない</li>
+                            </ul>
+                        </div>
+
+                        <p>多くのレンタルサーバーでは無料のSSL証明書（Let's Encrypt）が利用できます。まだ導入していない場合は、すぐに設定しましょう。</p>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>まとめ</h2>
+                        <div class="blog-summary">
+                            <ul>
+                                <li>WordPress本体は常に最新版に更新</li>
+                                <li>使わないプラグイン・テーマは削除</li>
+                                <li>強力なパスワードを設定（12文字以上）</li>
+                                <li>セキュリティプラグインを導入</li>
+                                <li>ログインページに追加の保護を設定</li>
+                                <li>週1回の自動バックアップを設定</li>
+                                <li>SSL証明書を導入してhttps化</li>
+                            </ul>
+                        </div>
+                        <p>セキュリティ対策は「やりすぎ」ということはありません。これらの基本的な対策を実施することで、多くの攻撃からサイトを守ることができます。自分で対応が難しい場合は、専門家に相談することをおすすめします。</p>
+                    </section>
+                </div>
+
+                <div class="blog-article-footer">
+                    <a href="../index.html#blog" class="btn btn-secondary">ブログ一覧に戻る</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="../.vscode/img/likanonlogo.png" alt="LIKaNON" class="footer-logo-img"></div>
+                    <p>作って終わりじゃない。<br>成果が続くWeb制作</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>サービス</h4>
+                        <ul>
+                            <li><a href="../index.html#service">Web制作</a></li>
+                            <li><a href="../index.html#service">運用・管理サポート</a></li>
+                            <li><a href="../index.html#service">デザイン制作</a></li>
+                            <li><a href="../index.html#service">SNS運用</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>コンテンツ</h4>
+                        <ul>
+                            <li><a href="../index.html#portfolio">実績</a></li>
+                            <li><a href="../index.html#reason">選ばれる理由</a></li>
+                            <li><a href="../index.html#blog">ブログ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LIKaNON. All Rights Reserved.</p>
+                <a href="#" class="back-to-top">TOP</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ハンバーガーメニュー
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ヘッダーのスクロール時の背景変更
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

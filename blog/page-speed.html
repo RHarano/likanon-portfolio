@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイト表示速度を3秒以内にする方法 | LIKaNON Blog</title>
+    <meta name="description" content="表示速度が1秒遅れるとコンバージョン率が7%低下。画像圧縮やキャッシュ活用など、具体的な改善方法をご紹介します。">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../index.html"><img src="../.vscode/img/likanonlogo.png" alt="LIKaNON" class="logo-img"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html#service">サービス</a></li>
+                    <li><a href="../index.html#portfolio">実績</a></li>
+                    <li><a href="../index.html#reason">選ばれる理由</a></li>
+                    <li><a href="../index.html#blog">ブログ</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ブログ記事 -->
+    <article class="blog-article">
+        <div class="blog-article-header">
+            <div class="container">
+                <div class="blog-article-meta">
+                    <span class="blog-category">サイト改善</span>
+                    <span class="blog-read-time">6分で読める</span>
+                </div>
+                <h1 class="blog-article-title">サイト表示速度を3秒以内にする方法</h1>
+                <p class="blog-article-lead">表示速度が1秒遅れると、コンバージョン率が7%低下すると言われています。Googleも表示速度を検索順位の評価基準にしています。具体的な改善方法をご紹介します。</p>
+            </div>
+        </div>
+
+        <div class="blog-article-content">
+            <div class="container">
+                <div class="blog-article-body">
+                    <section class="blog-section">
+                        <h2>なぜ表示速度が重要なのか</h2>
+                        <p>Webサイトの表示速度は、ユーザー体験とビジネス成果の両方に大きな影響を与えます。遅いサイトはユーザーを逃がし、売上機会を失うことにつながります。</p>
+
+                        <div class="blog-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">53%</span>
+                                <span class="stat-desc">3秒以上かかるサイトから離脱するモバイルユーザーの割合</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">7%</span>
+                                <span class="stat-desc">1秒の遅延によるコンバージョン率の低下</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">11%</span>
+                                <span class="stat-desc">1秒の遅延によるページビューの減少</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>1. 画像の最適化</h2>
+                        <p>画像ファイルは、ページの読み込み時間の大部分を占めることが多いです。適切に最適化することで、大幅な速度改善が期待できます。</p>
+
+                        <div class="blog-point-box">
+                            <h3>画像最適化のポイント</h3>
+                            <ul>
+                                <li><strong>WebP形式を使用</strong> - JPEGやPNGより50%以上軽量化</li>
+                                <li><strong>適切なサイズにリサイズ</strong> - 表示サイズ以上の画像は不要</li>
+                                <li><strong>圧縮ツールを活用</strong> - TinyPNG、Squooshなどで圧縮</li>
+                                <li><strong>遅延読み込み（Lazy Load）</strong> - 画面に表示される時に読み込む</li>
+                            </ul>
+                        </div>
+
+                        <div class="blog-tip-single">
+                            <span class="tip-icon">💡</span>
+                            <p>WordPressなら「EWWW Image Optimizer」プラグインで自動的に画像を最適化できます。</p>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>2. ブラウザキャッシュの活用</h2>
+                        <p>ブラウザキャッシュを設定すると、一度読み込んだファイルをブラウザに保存し、再訪問時の読み込み時間を大幅に短縮できます。</p>
+
+                        <div class="blog-highlight">
+                            <p>キャッシュすべきファイル</p>
+                            <ul>
+                                <li>画像ファイル（JPG, PNG, WebP, SVG）</li>
+                                <li>CSSファイル</li>
+                                <li>JavaScriptファイル</li>
+                                <li>フォントファイル</li>
+                            </ul>
+                        </div>
+
+                        <p>キャッシュの有効期限は、頻繁に更新しないファイルは1年程度、CSSやJSは1ヶ月程度に設定するのが一般的です。</p>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>3. 不要なプラグインの削除</h2>
+                        <p>WordPressサイトの場合、プラグインの数が多いほど読み込み時間が長くなる傾向があります。使っていないプラグインは積極的に削除しましょう。</p>
+
+                        <div class="blog-tips">
+                            <div class="tip-item">
+                                <h4>プラグイン見直しのチェックポイント</h4>
+                                <ul>
+                                    <li>本当に必要な機能か？</li>
+                                    <li>同じ機能を持つ軽量なプラグインはないか？</li>
+                                    <li>コードで実装できないか？</li>
+                                    <li>最終更新が1年以上前のプラグインは要注意</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="blog-warning">
+                            <span class="warning-icon">⚠️</span>
+                            <p>プラグインを削除する前に、必ずバックアップを取っておきましょう。</p>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>4. コードの最適化</h2>
+                        <p>HTML、CSS、JavaScriptファイルを最適化することで、読み込むデータ量を削減できます。</p>
+
+                        <div class="blog-point-box">
+                            <h3>コード最適化の方法</h3>
+                            <ul>
+                                <li><strong>ミニファイ（圧縮）</strong> - 不要な空白や改行を削除</li>
+                                <li><strong>Gzip圧縮</strong> - サーバー側でファイルを圧縮して転送</li>
+                                <li><strong>不要なコードの削除</strong> - 使っていないCSSやJSを削除</li>
+                                <li><strong>CSSとJSの非同期読み込み</strong> - レンダリングをブロックしない</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>5. CDNの利用</h2>
+                        <p>CDN（Content Delivery Network）を利用すると、世界各地のサーバーからコンテンツを配信でき、ユーザーに近いサーバーから読み込むため表示速度が向上します。</p>
+
+                        <div class="blog-highlight">
+                            <p>おすすめのCDNサービス</p>
+                            <ul>
+                                <li>Cloudflare（無料プランあり）</li>
+                                <li>AWS CloudFront</li>
+                                <li>Google Cloud CDN</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>表示速度を測定する</h2>
+                        <p>改善を行う前後で、必ず表示速度を測定しましょう。以下のツールを使うと、現状の問題点と改善すべきポイントがわかります。</p>
+
+                        <div class="blog-tools">
+                            <div class="tool-item">
+                                <h4>PageSpeed Insights</h4>
+                                <p>Googleが提供する無料ツール。モバイルとデスクトップの両方をチェックでき、改善点も提示してくれます。</p>
+                            </div>
+                            <div class="tool-item">
+                                <h4>GTmetrix</h4>
+                                <p>詳細なパフォーマンス分析が可能。ウォーターフォールチャートで読み込み順序も確認できます。</p>
+                            </div>
+                            <div class="tool-item">
+                                <h4>Lighthouse</h4>
+                                <p>Chrome DevToolsに内蔵。パフォーマンス以外にもアクセシビリティやSEOもチェック可能。</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2>まとめ</h2>
+                        <div class="blog-summary">
+                            <ul>
+                                <li>画像はWebP形式で50%以上軽量化</li>
+                                <li>ブラウザキャッシュを適切に設定</li>
+                                <li>使っていないプラグインは即削除</li>
+                                <li>HTML/CSS/JSをミニファイ・圧縮</li>
+                                <li>CDNでグローバル配信を高速化</li>
+                                <li>PageSpeed Insightsで定期的にチェック</li>
+                            </ul>
+                        </div>
+                        <p>表示速度の改善は、ユーザー体験の向上だけでなく、SEO効果やコンバージョン率の向上にもつながります。できることから少しずつ改善していきましょう。</p>
+                    </section>
+                </div>
+
+                <div class="blog-article-footer">
+                    <a href="../index.html#blog" class="btn btn-secondary">ブログ一覧に戻る</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="../.vscode/img/likanonlogo.png" alt="LIKaNON" class="footer-logo-img"></div>
+                    <p>作って終わりじゃない。<br>成果が続くWeb制作</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>サービス</h4>
+                        <ul>
+                            <li><a href="../index.html#service">Web制作</a></li>
+                            <li><a href="../index.html#service">運用・管理サポート</a></li>
+                            <li><a href="../index.html#service">デザイン制作</a></li>
+                            <li><a href="../index.html#service">SNS運用</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>コンテンツ</h4>
+                        <ul>
+                            <li><a href="../index.html#portfolio">実績</a></li>
+                            <li><a href="../index.html#reason">選ばれる理由</a></li>
+                            <li><a href="../index.html#blog">ブログ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LIKaNON. All Rights Reserved.</p>
+                <a href="#" class="back-to-top">TOP</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ハンバーガーメニュー
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // ヘッダーのスクロール時の背景変更
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
